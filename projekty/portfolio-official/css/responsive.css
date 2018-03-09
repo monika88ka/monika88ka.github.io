@@ -1,0 +1,35 @@
+@media (min-width:701px) {
+    .side-menu-trigger {
+display: none;
+    }
+}
+
+@media (max-width:700px) {
+    .side-menu-trigger {
+        display: inline-block;
+        z-index: 101;
+    }
+    .side-menu {
+        right: -300px;
+        transition: 0.3s transform ease-in-out;
+    }
+
+    .side-menu-trigger:focus,  .side-menu,
+    .side-menu:hover {
+        transform: translateX(-300px);
+    }
+    .side-menu-trigger:focus ~ .side-menu-trigger-close, 
+.side-menu:hover {
+  transform: translateX(-100%); 
+}
+    #header-container .main-header {
+       
+        width: 50%;
+    }
+    .header-h1{
+        font-size:3rem;
+    }
+    .header-h2{
+        font-size:1.5rem;
+    }
+}
