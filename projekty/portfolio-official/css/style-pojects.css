@@ -1,52 +1,133 @@
 
-#slideshow {
-
-    position: relative;
-    width: 800px;
-    height: 450px;
-    padding: 10px;
-    box-shadow: 0 0 20px #696e9e;
-    ;
-    left: 10%;
-    top: 80px;
+#slider{
+    background-image: url(../img/error-in-php-wordpress-code-picjumbo-com.jpg);
+    height:100vh;
+    background-position: center;
+    background-size:cover;
+    
 }
-
-#slideshow > div {
-    width: 100%;
+.slider-mask{
+     background-color: rgba(22, 22, 22, 0.9);
     height: 100%;
+    width: 100%;
     position: absolute;
-
-    background-repeat: no-repeat;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
 }
 
-.photo-slide3 {
-    background-image: url(../img/portfolio1.jpg);
-
-}
-
-.photo-slide1 {
+.photo1 {
     background-image: url(../img/hydraulik3.jpg);
 }
 
-.photo-slide2 {
+.photo2 {
     background-image: url(../img/portfolio2.jpg);
 }
 
-.slide-size {
+.photo3 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 80vh;
+    margin-right: 300px;
+    margin-top:25px;
+}
+
+.slider-wrapper {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.inner-wrapper {
+    width: 500%;
+    height: 100%;
+    position: relative;
+    left: -100%;
+
+}
+
+.slide {
+    position: relative;
+    width: calc(100% / 5);
+    height: 100%;
+    float: left;
+    font-size: 100px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
     background-size: cover;
-    background-position: center;
 }
-#slide {
-    background-image: url(../img/error-in-php-wordpress-code-picjumbo-com.jpg);
-    height: 100vh;
-      background-size: cover;
-    background-position: center;
+
+.button {
+    width: 30px;
+    height: 30px;
+    color: #696e9e;
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
 }
-.slide-container{
-    height:100%;
-    background-color: rgba(22, 22,22,0.9)
+
+.button:hover {
+    color: white;
 }
+
+.prev {
+    top: 40%;
+    left:5%;
+
+}
+
+.next {
+    top: 40%;
+    left:71%;
+
+}
+
+.slide-mask {
+    background-color: rgba(44, 44, 44, 0.9);
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition:all 0.5s;
+    
+}
+
+.slide-mask:hover {
+    opacity: 1;
+}
+.mask-header{
+    font-size:2.5rem;
+    text-align: center;
+    color: #696e9e;
+    font-weight: bold;
+}
+.text-mask-container{
+    display:flex;
+    justify-content: center;
+    
+}
+.icons-mask-container{
+    display: flex;
+    justify-content:center;
+}
+.mask-text{
+    font-size:1.5rem;
+  display: flex;
+    color:#fff;
+    font-weight: bold;
+    padding:0px 50px;
+   
+}
+.link-icon{
+   padding:0px 40px;
+    color:#696e9e;
+}
+.link-icon:hover{
+    color: white;
+}
+

@@ -1,12 +1,35 @@
-$(document).ready(function(){
+$(function() {
     'use strict';
 
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  3000);
-});
+  var inWrap = $('.inner-wrapper');
+
+  $('.prev').on('click', function() {
+
+    inWrap.animate({left: '0%'}, 300, function(){
+
+      inWrap.css('left', '-100%');
+
+      $('.slide').first().before($('.slide').last());
+
+    });
+
+
+  });
+
+
+
+  $('.next').on('click', function() {
+
+    inWrap.animate({left: '-200%'}, 300, function(){
+
+      inWrap.css('left', '-100%');
+
+      $('.slide').last().after($('.slide').first());
+
+    });
+
+
+  });
+
+
+})

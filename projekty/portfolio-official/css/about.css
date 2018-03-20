@@ -1,0 +1,27 @@
+
+
+#about{
+    height:100vh;
+    position: relative;
+     background-position: center;
+    background-size: cover;
+    background-image: url(../img/error-in-php-wordpress-code-picjumbo-com.jpg);
+    
+}
+.about-header{
+    height:100%;
+    background-color: rgba(22, 22, 22, 0.9);
+}
+.about-container{
+    background-color: rgba(22, 22, 22, 1);
+    height:50vh;
+    width: 100vh;
+}
+.about-photo{
+    position: absolute;
+    background-image: url(../img/zdjecie-portfolio2.jpg);
+    height:250px;
+    width:200px;
+     background-position: center;
+    background-size: cover;
+}
