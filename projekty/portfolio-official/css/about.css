@@ -12,10 +12,9 @@
     height:100%;
     background-color: rgba(22, 22, 22, 0.9);
 }
-.about-container{
-    background-color: rgba(22, 22, 22, 1);
-    height:50vh;
-    width: 100vh;
+.container-about{
+    height:100%;
+    width:100%;
 }
 .about-photo{
     position: absolute;
@@ -24,4 +23,18 @@
     width:200px;
      background-position: center;
     background-size: cover;
+    transform: translate(70%,50%);
+    display: inline-block;
+
+}
+.about-text{
+    position: absolute;
+    height:350px;
+    width: 50%;
+    display: inline-block;
+    
+}
+.about-text p {
+       color:#696e9e;
+    font-size:1.5rem;
 }
