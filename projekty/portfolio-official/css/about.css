@@ -41,7 +41,7 @@
     position: absolute;
     height:110px;
     width: 40%;
-    display: inline-block;
+/*    display: inline-block;*/
      transform: translate(80%,110%);
     text-align: center;
     
@@ -57,12 +57,28 @@
     color:white;
     font-weight: bold;
 }
+/*
 .technology-icon{
     display: inline-block;
 
 }
+*/
 .tech-icon{
     padding: 0px 10px;
   
     color:#696e9e;
+}
+.technology-icon figure{
+    display: inline-block;
+    text-align: center;
+    margin:0;
+}
+.technology-icon{
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+.technology-icon figure figcaption{
+    color:white;
+    font-size:0.8rem;
 }
