@@ -6,6 +6,7 @@
      background-position: center;
     background-size: cover;
     background-image: url(../img/error-in-php-wordpress-code-picjumbo-com.jpg);
+   
     
 }
 .about-header{
@@ -13,8 +14,13 @@
     background-color: rgba(22, 22, 22, 0.9);
 }
 .container-about{
-    height:100%;
+    position: relative;
     width:100%;
+    
+}
+.photo-container{
+    width:50%;
+    
 }
 .about-photo{
     position: absolute;
@@ -25,16 +31,38 @@
     background-size: cover;
     transform: translate(70%,50%);
     display: inline-block;
+     border:solid 1px #696e9e;
+    
 
 }
 .about-text{
+    font-weight: bold;
+    line-height: 30px;
     position: absolute;
-    height:350px;
-    width: 50%;
+    height:110px;
+    width: 40%;
     display: inline-block;
+     transform: translate(80%,110%);
+    text-align: center;
     
 }
 .about-text p {
        color:#696e9e;
-    font-size:1.5rem;
+    font-size:1rem;
+    text-align: center;
+    
+}
+.technology-header{
+    
+    color:white;
+    font-weight: bold;
+}
+.technology-icon{
+    display: inline-block;
+
+}
+.tech-icon{
+    padding: 0px 10px;
+  
+    color:#696e9e;
 }
