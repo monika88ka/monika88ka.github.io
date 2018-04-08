@@ -66,15 +66,15 @@
     }
     .about-text {
         width: 100%;
-        display: inline-block;
+
     }
     .photo {
         width: 100%;
+        text-align: center;
     }
     .photo-container {
         width: 100%;
         float: none;
-        margin: 50px;
 
     }
 
@@ -82,17 +82,13 @@
         width: 100%;
         float: none;
     }
-    .about-p {
-        float: none;
 
-    }
     .menu-container {
         width: 0%;
-        margin: 0;
+       float: none;
 
     }
     .container {
         float: none;
-        margin-left: 100px;
     }
 }
